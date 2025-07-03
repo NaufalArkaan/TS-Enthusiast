@@ -1,0 +1,6 @@
+tsc main.ts = compile ke js
+tsc main.ts -w = compile real time ke js / tsc -w
+tsc --init = config
+
+tsconfig outdir = untuk masukin file compile js ke dalam folder yang kita tentukan
+tsconfig rootdir = khusus file yang di dalam root akan di compile ke js
