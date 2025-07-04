@@ -92,8 +92,20 @@
 //     console.log(data.toUpperCase());
 // }
 //Type Assertion
-let someValue = "haii";
-// console.log((<string>someValue).length);
-// console.log((someValue as string).length);
-let image = document.getElementById('imageID');
-image.src = "https://images.unsplash.com/photo-1751514327780-07ea25d993dc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+// let someValue: unknown = "haii";
+// // console.log((<string>someValue).length);
+// // console.log((someValue as string).length);
+// let image = document.getElementById('imageID') as HTMLImageElement;
+// image.src = "https://images.unsplash.com/photo-1751514327780-07ea25d993dc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//Struktur Control
+// try{
+//     throw new Error("Something went wrong!");
+// }catch(eror){
+//     console.error(eror);
+// }
+//Fungsi dasar
+// function greeting(value: string): string{
+//     return "hallo " + value;
+// }
+// console.log(greeting("asep"));
+//Parameter Opsional
