@@ -157,3 +157,33 @@
 // }
 // processData([1,2,3,4], logItem);
 //class dan constructor
+// class Product{
+//     name: string;
+//     price: number;
+//     constructor(name: string, price:number){
+//         this.name = name;
+//         this.price = price;
+//     }
+//     displayInfo(): void {
+//         console.log(`Nama produk: ${this.name}`);
+//         console.log(`Harga produk: ${this.price}`);
+//     }
+// }
+// const product1 = new Product("Roti", 15000);
+// console.log(product1);
+// console.log(product1.name);
+// product1.displayInfo();
+// class Electronic extends Product {
+//     warranty: number;
+//     constructor(name: string, price: number, warranty: number){
+//         super(name, price);
+//         this.warranty = warranty;
+//     }
+//     displayInfo(): void {
+//         super.displayInfo();
+//         console.log(`Warranty: ${this.warranty} years`);
+//     }
+// }
+// const electronic1 = new Electronic("Kulkas", 1000000, 3);
+// electronic1.displayInfo();
+//Modifier
