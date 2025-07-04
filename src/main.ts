@@ -138,3 +138,62 @@
 // console.log(greeting("asep"));
 
 //Parameter Opsional
+// function greet(name: string, age?: number): string {
+//     if(age){
+//         return `Umur anda adalah ${age}`;
+//     }else{
+//         return `Haloo ${name}`;
+//     }
+// }
+
+// console.log(greet("Hayaa"));
+
+//Parameter Default
+// function greet(name: string = "Guest"): string {
+//     return `Halo ${name}`;
+// }
+
+// console.log(greet());
+// console.log(greet("Yono"));
+
+//Void dan Never
+//Void
+// function message(argument: string): void{
+//     console.log(argument);
+// }
+// message("haii");
+//Never
+// function throwError(message: string): never {
+//     throw new Error(message);   
+// }
+
+//Arrow Function
+// let multiply = (x: number, y: number): number => x * y;
+
+// console.log(multiply(2, 6));
+
+//Overloading fungsi
+// function combine(a: number, b: number): number;
+// function combine(a: string, b: string): string;
+// function combine(a: any, b: any): any {
+//     if(typeof a === "number" && typeof b === "number"){
+//         return a + b;
+//     }else if(typeof a === "string" && typeof b === "string"){
+//         return a + b
+//     }
+// }
+// console.log(combine(2, 3));
+// console.log(combine("Hallo", " Sayang"));
+
+//Callback(type safety)
+// function processData(data: number[], Callback: (item: number) => void): void{
+//     data.forEach(Callback);
+// }
+
+// function logItem(item: number): void{
+//     console.log(item * 2);
+// }
+
+// processData([1,2,3,4], logItem);
+
+//class dan constructor
