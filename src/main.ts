@@ -235,3 +235,75 @@
 // electronic1.displayInfo();
 
 //Modifier
+// class Product{
+//     protected name: string; //protected hanya bisa di subclass nya
+//     readonly price: number; //hanya bisa ngebaca dan ga bisa ubah value nya
+
+//     constructor(name: string, price:number){
+//         this.name = name;
+//         this.price = price;
+//     }
+
+//     displayInfo(): void {
+//         console.log(`Nama produk: ${this.name}`);
+//         console.log(`Harga produk: ${this.price}`);
+//     }
+// }
+
+// const product1 = new Product("Roti", 15000);
+// console.log(product1);
+// product1.displayInfo();
+
+// class Electronic extends Product {
+//     warranty: number;
+
+//     constructor(name: string, price: number, warranty: number){
+//         super(name, price);
+//         this.warranty = warranty;
+//     }
+
+//     displayInfo(): void {
+//         super.displayInfo();
+//         console.log(`Warranty: ${this.warranty} years`);
+//         console.log(this.name);
+//     }
+// }
+
+// const electronic1 = new Electronic("Kulkas", 1000000, 3);
+// electronic1.displayInfo();
+
+//Shorthand Initiliazation
+// class User{
+//     constructor(public name: string, public age: number){}
+// }
+
+// const user1 = new User("fal", 19);
+// console.log(user1);
+
+//Polymorphism
+// class Animal{
+//     makeSound(): void {
+//         console.log('Some generic animal sound');
+//     }
+// }
+
+// class Dog extends Animal{
+//     makeSound(): void {
+//         console.log('bark!');
+//     }
+// }
+
+// const animal:Animal = new Dog();
+// console.log(animal.makeSound());
+
+//Static Methods
+// class Calculator {
+//     static pi: number = 3.14;
+
+//     static calculateArea(radius: number): number {
+//         return Calculator.pi * radius * radius;
+//     }
+// }
+// console.log(Calculator.calculateArea(2));
+
+//Getters and Setters
