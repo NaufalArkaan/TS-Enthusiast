@@ -306,4 +306,28 @@
 // }
 // console.log(Calculator.calculateArea(2));
 
-//Getters and Setters
+// //Getters and Setters (get balikin nilai, set ubah nilai)
+// class Person{
+//     constructor(private _age: number){
+//         this._age = _age;
+//     }
+
+//     get age(): number{
+//         return this._age;
+//     }
+
+//     set age(value: number){
+//         if(value >= 0){
+//             this._age = value;
+//         }else{
+//             console.log('Invalid');
+//         }
+//     }
+// }
+
+// const person1 = new Person(20);
+// console.log(person1.age);
+// person1.age = 30;
+// console.log(person1.age);
+
+//Abstract Class
