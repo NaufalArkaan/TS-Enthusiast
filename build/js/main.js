@@ -321,3 +321,34 @@
 // console.log(person1);
 // console.log(person1.name, person1.age);
 //Interface Inheritance
+// interface Person{
+//     name: string;
+//     age: number;
+// }
+// interface Person1 extends Person{
+//     password: string;
+// }
+// const per: Person1 = {
+//     name: "Naufal",
+//     age: 12,
+//     password: "admin123"
+// }
+// console.log(per);
+// console.log(per.name);
+//Index Signatures
+// interface studentByID{
+//     [studentId: number]: number;
+// }
+// const studentScore: studentByID ={
+//     101: 86,
+//     102: 87,
+//     103: 90
+// }
+// console.log(studentScore);
+//Interface Function Types
+// interface Add{
+//     (a: number, b: number): number;
+// }
+// const add: Add = (a, b) => a + b;
+// console.log(add(2, 4));
+//Generics
