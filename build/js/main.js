@@ -264,3 +264,60 @@
 // person1.age = 30;
 // console.log(person1.age);
 //Abstract Class
+// abstract class Animal{
+//     abstract Sound(): void;
+//     Move(): void{
+//         console.log("Moving...")
+//     }
+// }
+// class Dog extends Animal{
+//     Sound(): void {
+//         console.log('Wuff wuff...')
+//     }
+// }
+// const Dog1 = new Dog();
+// Dog1.Sound();
+// Dog1.Move();
+//Interface dan Properti Opsional
+// interface User{
+//     nama: string;
+//     umur?: number; //properti opsional
+// }
+// const user1: User = {
+//     nama: "fall",
+//     umur: 22
+// }
+// console.log(user1);
+// console.log(user1.nama);
+// console.log(user1.umur);
+//Method di interface
+// interface User{
+//     nama: string;
+//     umur?: number; //properti opsional
+//     greeting(): void;
+// }
+// const user1: User = {
+//     nama: "fall",
+//     umur: 22,
+//     greeting() {
+//         console.log("haloo...");
+//     }
+// }
+// console.log(user1);
+// console.log(user1.nama);
+// console.log(user1.umur);
+// user1.greeting();
+//interface merging
+// interface Person{
+//     name: string;
+// }
+// interface Person{
+//     age: number;
+// }
+// const person1: Person = {
+//     name: "ucup",
+//     age: 50
+// }
+// console.log(person1);
+// console.log(person1.name, person1.age);
+//Interface Inheritance
