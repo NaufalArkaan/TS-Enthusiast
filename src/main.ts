@@ -438,3 +438,11 @@
 // console.log(add(2, 4));
 
 //Generics
+// function identity<T, U>(value: T, name: U): void{ //pada fungsi
+//     console.log(value, name)
+// }
+
+// let result1 = identity<string, string>("haii...", "fal");
+// console.log(result1);
+
+//Generics pada class
