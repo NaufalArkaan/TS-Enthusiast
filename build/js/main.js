@@ -379,8 +379,91 @@
 // let numberPair: Pair<number, string> = {first: 1, second: "one"};
 // console.log(numberPair);
 //Batasan Generics (Constraints)
-function logLength(item) {
-    console.log(item.length);
+// function logLength<T extends {length: number}>(item: T): void{
+//     console.log(item.length);
+// }
+// logLength("hallo");
+// logLength([1, 2, 3]);
+//Generics Default
+// function createArray<T = string>(length: number, value: T): T[]{
+//     return Array(length).fill(value);
+// }
+// const strings = createArray(3, 'hello');
+// console.log(strings);
+// let number = createArray<number>(3, 12);
+// console.log(number);
+//Partial
+// interface User{
+//     name: string;
+//     age: number;
+//     pass: string;
+// }
+// function names(user: Partial<User>): void{
+//     console.log(user);
+// }
+// names({age: 24});
+//Required
+// interface User{
+//     name?: string;
+//     age?: number;
+// }
+// const user = (identitas: Required<User>) => {
+//     console.log(identitas);
+// }
+// user({name: "ayaa", age: 19});
+//Readonly
+// interface User{
+//     age: number;
+// }
+// const user: Readonly<User> = {
+//     age: 25
+// }
+// console.log(user);
+//Pick
+// interface User{
+//     name: string;
+//     age: number;
+//     score: number;
+// }
+// type UserInfo = Pick<User, 'name'|'age'>;
+// const userinfo: UserInfo = {name: "ucup", age:50};
+// console.log(userinfo);
+//Omit
+// interface User{
+//     name: string;
+//     age: number;
+//     score: number;
+// }
+// type UserInfo = Omit<User, 'name'|'age'>;
+// const userinfo: UserInfo = {score: 90};
+// console.log(userinfo);
+//Record
+// type userRoles = 'nama' | 'umur';
+// const users: Record<userRoles, string[]> = {
+//     nama: ["ipin", "ipin"],
+//     umur: ["1"]
+// }
+// console.log(users);
+//Extract
+//  type stringOrNumber = string | number;
+//  type onlyString = Extract<stringOrNumber, string>;
+//  const number: onlyString = "123";
+//  console.log(typeof(number));
+//Exclude
+// type stringOrNumber = string | number;
+// type onlyNumber = Exclude<stringOrNumber, string>
+// const number: onlyNumber = 123;
+// console.log(typeof(number));
+//NonNullable
+// type NullableString = string | null | undefined;
+// type NonNullableString = NonNullable<NullableString>;
+// ReturnType
+// function getUser(){return {name: 'fal', id: 1}};
+// type UserReturnType = ReturnType<typeof getUser>;
+// console.log(getUser());
+//Instance Type
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
 }
-logLength("hallo");
-logLength([1, 2, 3]);
