@@ -446,3 +446,35 @@
 // console.log(result1);
 
 //Generics pada class
+// class Orang<T> {
+//     nama: T;
+
+//     constructor(nama: T){
+//         this.nama = nama;
+//     }
+
+//     getcontent(): T {
+//         return this.nama;
+//     }
+// }
+
+// let nama1 = new Orang<string>("Typescript");
+// console.log(nama1.getcontent());
+
+// let nama2 = new Orang<number>(123);
+// console.log(nama2.getcontent());
+
+//Generics Pada Interface
+// interface Pair<T, U>{
+//     first: T;
+//     second: U;
+// }
+// let numberPair: Pair<number, string> = {first: 1, second: "one"};
+// console.log(numberPair);
+
+//Batasan Generics (Constraints)
+function logLength<T extends {length: number}>(item: T): void{
+    console.log(item.length);
+}
+logLength("hallo");
+logLength([1, 2, 3]);
