@@ -585,7 +585,7 @@
 
 //Instance Type
 class Person{
-    constructor(public name: string){}
+    constructor(public name: string){} //shortcut
 }
 
 type PersonInstance = InstanceType<typeof Person>;
